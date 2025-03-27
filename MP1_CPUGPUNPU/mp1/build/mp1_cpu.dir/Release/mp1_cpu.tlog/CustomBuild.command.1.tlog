@@ -1,0 +1,10 @@
+^C:\USERS\MJWU1\DOCUMENTS\CS 521\MP1\MP1\CPU\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/mjwu1/Documents/CS 521/mp1/mp1/cpu" "-BC:/Users/mjwu1/Documents/CS 521/mp1/mp1/build" --check-stamp-file "C:/Users/mjwu1/Documents/CS 521/mp1/mp1/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
